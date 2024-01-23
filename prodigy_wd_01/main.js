@@ -14,7 +14,7 @@ if(navClose){
     })
 }
 
-const navLink = document.querySelectorAll(".nav__link")
+const navLink = document.querySelectorAll(".nav-link")
 
 function linkAction(){
     const navMenu = document.getElementById("nav-menu")
@@ -45,9 +45,9 @@ function scrollActive(){
         sectionId = current.getAttribute("id")
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector(".nav__menu a[href*=" + sectionId + "]").classList.add("active-link")
+            document.querySelector(".nav-menu a[href*=" + sectionId + "]").classList.add("active-link")
         }else{
-            document.querySelector(".nav__menu a[href*=" + sectionId + "]").classList.remove("active-link")
+            document.querySelector(".nav-menu a[href*=" + sectionId + "]").classList.remove("active-link")
         }
     })
 }
@@ -59,12 +59,12 @@ const sr = ScrollReveal({
     delay: 400,
 })
 
-sr.reveal(`.home__header, .section__title`,{delay: 600})
-sr.reveal(`.home__footer`,{delay: 700})
-sr.reveal(`.home__img`,{delay: 900, origin: "top"})
+sr.reveal(`.home-header, .section-title`,{delay: 600})
+sr.reveal(`.home-footer`,{delay: 700})
+sr.reveal(`.home-img`,{delay: 900, origin: "top"})
 
-sr.reveal(`.sponsor__img, .products__card, .footer__logo, .footer__content, .footer__copy`,{origin: "top", interval: 100})
-sr.reveal(`.specs__data, .discount__animate`,{origin: "left", interval: 100})
-sr.reveal(`.specs__img, .discount__img`,{origin: "right"})
-sr.reveal(`.case__img`,{origin: "top"})
-sr.reveal(`.case__data`)
+sr.reveal(`.sponsor-img, .products-card, .footer-logo, .footer-content, .footer-copy`,{origin: "top", interval: 100})
+sr.reveal(`.specs-data, .discount-animate`,{origin: "left", interval: 100})
+sr.reveal(`.specs-img, .discount-img`,{origin: "right"})
+sr.reveal(`.case-img`,{origin: "top"})
+sr.reveal(`.case-data`)
