@@ -69,12 +69,10 @@ body {
 }
 
 @media screen and (max-width: 396px) {
-
     #startStop,
     #lap {
         margin: 0;
     }
-
     #startStop,
     #reset,
     #lap {
