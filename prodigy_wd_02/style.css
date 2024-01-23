@@ -81,6 +81,13 @@ body {
     .time {
         font-size: 24px;
     }
+    #startStop {
+        margin: 0;
+    }
+    
+    #lap {
+        margin: 0;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
