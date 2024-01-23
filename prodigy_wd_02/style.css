@@ -38,10 +38,7 @@ body {
     color: #333;
 }
 
-#startStop {
-    margin: 0 10px;
-}
-
+#startStop,
 #lap {
     margin: 0 10px;
 }
@@ -71,6 +68,23 @@ body {
     }
 }
 
+@media screen and (max-width: 396px) {
+
+    #startStop,
+    #lap {
+        margin: 0;
+    }
+
+    #startStop,
+    #reset,
+    #lap {
+        display: block;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+}
+
 @media screen and (max-width: 767px) {
     .circle {
         width: 150px;
@@ -80,13 +94,6 @@ body {
     }
     .time {
         font-size: 24px;
-    }
-    #startStop {
-        margin: 0;
-    }
-    
-    #lap {
-        margin: 0;
     }
 }
 
